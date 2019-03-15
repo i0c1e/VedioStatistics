@@ -2,6 +2,7 @@ package com.victor.dao
 
 import com.victor.domain.CategoryClickCount
 import com.victor.project.Utils.HBaseUtils
+import com.victor.utils.HBaseUtils
 import org.apache.hadoop.hbase.client.{Get, Put}
 import org.apache.hadoop.hbase.util.Bytes
 

@@ -1,11 +1,12 @@
 package com.victor.dao
 
 import com.victor.domain.CategorySearchClickCount
-import com.victor.project.Utils.HBaseUtils
+import com.victor.utils.HBaseUtils
 import org.apache.hadoop.hbase.client.Get
 import org.apache.hadoop.hbase.util.Bytes
 
 import scala.collection.mutable.ListBuffer
+
 
 object CategorySearchClickCountDAO {
   val tableName = "category_search_clickcount"

@@ -3,7 +3,6 @@ package com.victor.project
 import com.victor.dao.{CategoryClickCountDAO, CategorySearchClickCountDAO}
 import com.victor.domain.{CategoryClickCount, CategorySearchClickCount, ClickLog}
 import com.victor.project.Utils.TimeUtils
-import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.streaming.kafka010._

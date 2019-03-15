@@ -1,10 +1,10 @@
-/**
+package com.victor.utils; /**
  * @author Charles
  * @create 2019/3/13
  * @since 1.0.0
  */
 
-package com.victor.project.Utils;
+//package com.victor.project.Utils;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
