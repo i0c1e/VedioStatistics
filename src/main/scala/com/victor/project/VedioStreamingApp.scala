@@ -4,10 +4,10 @@ import com.victor.dao.{CategoryClickCountDAO, CategorySearchClickCountDAO}
 import com.victor.domain.{CategoryClickCount, CategorySearchClickCount, ClickLog}
 import com.victor.project.Utils.TimeUtils
 import org.apache.kafka.common.serialization.StringDeserializer
-import org.apache.spark.streaming.{Seconds, StreamingContext}
-import org.apache.spark.streaming.kafka010._
-import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
 import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
+import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
+import org.apache.spark.streaming.kafka010._
+import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 import scala.collection.mutable.ListBuffer
 

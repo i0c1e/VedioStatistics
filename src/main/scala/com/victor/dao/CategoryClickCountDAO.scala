@@ -73,7 +73,10 @@ object CategoryClickCountDAO {
   def getCount(day_categoryID: String) = {
     val table = HBaseUtils.getInstance().getTable(tableName)
     val get = new Get(Bytes.toBytes(day_categoryID))
-    val value = table.get(get).getValue(Bytes.toBytes(family), Bytes.toBytes(qualifer))
+    val value = table.get(get).getValue(
+      Bytes.toBytes(family),
+      Bytes.toBytes(qualifer)
+    )
     if (value == null) {
       0L
     } else {
